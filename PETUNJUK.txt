@@ -1,0 +1,61 @@
+UNDANGAN PERNIKAHAN DIGITAL — PETUNJUK PENGEDITAN
+
+FILE UTAMA
+- index.html       : teks undangan, tanggal, jam, nama orang tua, lokasi dan tautan foto.
+- style.css        : warna, font, jarak, tata letak dan ornamen.
+- script.js        : nama pasangan, hitung mundur, musik, RSVP WhatsApp, nama tamu dan Google Maps.
+- generator-tamu.html : alat membuat tautan personal untuk nama tamu.
+- foto/            : semua foto mempelai dan galeri.
+- musik.mp3        : opsional, musik yang Anda punya izin untuk gunakan.
+
+FORMAT FOTO (NAMA HARUS PERSIS)
+- foto/mempelai-wanita.jpg
+- foto/mempelai-pria.jpg
+- foto/galeri-01.jpg
+- foto/galeri-02.jpg
+- foto/galeri-03.jpg
+- foto/galeri-04.jpg
+
+CARA MENGGANTI FOTO
+1. Siapkan foto JPG. Untuk hasil rapi, gunakan foto potret dengan wajah jelas.
+2. Beri nama sesuai daftar di atas, huruf kecil dan tanda hubung harus sama.
+3. Letakkan semua foto di folder foto.
+4. Saat mengunggah ke GitHub, unggah folder foto beserta seluruh isinya. Untuk mengganti foto lama, replace file dengan nama yang sama.
+5. Buka index.html di browser untuk menguji. Foto yang belum disediakan akan tetap menjadi placeholder.
+
+CARA MENGGANTI NAMA PASANGAN
+1. Buka script.js.
+2. Di bagian atas, cari COUPLE_NAMES.
+3. Ganti nilai bride dan groom, contoh: bride: "Nama Mempelai Wanita", groom: "Nama Mempelai Pria".
+4. Buka ulang website untuk memeriksa nama pada sampul, profil, RSVP dan penutup.
+5. Ubah juga nama orang tua, tanggal, jam, alamat, dan teks lain secara langsung di index.html.
+
+PENGAMANAN EDITOR
+- Form unggah foto dan edit nama yang sebelumnya terlihat untuk semua pengunjung sudah dihilangkan dari halaman undangan.
+- Foto/nama dipasang melalui file website, jadi pengunjung biasa tidak dapat mengubah versi website yang dilihat orang lain.
+- Jika memakai GitHub Pages, atur repository menjadi private jika paket/fitur Anda mendukung Pages untuk private repository, atau gunakan repository publik tetapi jangan memberi akses write/collaborator kepada orang lain. Situs publik dapat dilihat semua orang, namun hanya akun dengan izin tulis yang dapat mengubah file sumber.
+- Jangan menaruh kata sandi rahasia di HTML/JavaScript. Kunci password di frontend statis dapat dilihat dan dilewati; perlindungan sungguhan harus diterapkan oleh layanan hosting/backend.
+
+WAJIB DISESUAIKAN SEBELUM DIPUBLIKASIKAN
+1. Ganti contoh nama pasangan di COUPLE_NAMES pada script.js.
+2. Ubah WHATSAPP_NUMBER di script.js ke nomor penerima RSVP, format angka dengan kode negara tanpa tanda +, contoh 6281234567890.
+3. Ubah weddingDate di script.js sesuai tanggal dan jam acara.
+4. Ubah teks tanggal, waktu, nama orang tua, dan lokasi di index.html.
+5. Perbarui tautan Google Maps pada index.html dan script.js.
+6. Tambahkan foto ke folder foto dan musik.mp3 jika digunakan.
+
+CATATAN RSVP
+Form RSVP menyiapkan pesan lalu membuka WhatsApp. Jawaban tidak tersimpan otomatis di website/database.
+
+CARA MEMAKAI GENERATOR TAMU
+1. Publikasikan website utama terlebih dahulu.
+2. Unggah generator-tamu.html ke hosting yang sama.
+3. Buka URL generator-tamu.html, tempel URL website undangan utama.
+4. Masukkan satu nama tamu per baris, lalu buat dan salin tautan personal.
+5. Tautan personal menggunakan parameter ?to= untuk menampilkan nama tamu di sampul.
+
+CARA PUBLIKASI GITHUB PAGES
+1. Unggah index.html, style.css, script.js, generator-tamu.html, folder foto, dan musik opsional ke repository.
+2. Buka Settings > Pages.
+3. Pilih Deploy from a branch, branch main dan folder / (root), lalu Save.
+4. Setelah publikasi selesai, bagikan URL website.

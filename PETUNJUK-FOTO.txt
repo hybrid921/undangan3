@@ -1,0 +1,16 @@
+FOLDER FOTO UNDANGAN
+
+Simpan foto dengan nama dan format berikut (huruf kecil, ekstensi .jpg):
+- mempelai-wanita.jpg  : foto mempelai wanita
+- mempelai-pria.jpg    : foto mempelai pria
+- galeri-01.jpg        : foto galeri pertama
+- galeri-02.jpg        : foto galeri kedua
+- galeri-03.jpg        : foto galeri ketiga
+- galeri-04.jpg        : foto galeri keempat
+
+Ganti file foto lama dengan foto baru memakai nama yang PERSIS sama.
+Disarankan gambar JPG/JPEG, orientasi potret untuk foto mempelai dan galeri.
+Jika memakai PNG/WebP atau nama berbeda, edit juga src foto di index.html.
+
+Untuk mengganti nama pasangan, edit konstanta COUPLE_NAMES di script.js.
+Jangan bagikan akses tulis repository/hosting kepada orang yang tidak dipercaya.
